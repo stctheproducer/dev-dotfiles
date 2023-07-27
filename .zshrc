@@ -94,5 +94,7 @@ export HISTFILE=/dc/shellhistory/.zsh_history
 export PROMPT_COMMAND='history -a'
 sudo chown -R $(whoami) /dc/shellhistory
 
+export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+
 # Aliases
 source $HOME/dotfiles/.aliases
