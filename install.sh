@@ -10,7 +10,7 @@ fi
 brew install git-delta
 
 # Create symlinks
-ln -nfs $HOME/dotfiles/spaceship.zsh $HOME/.config/spaceship.zsh
-# ln -nfs $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-ln -nfs $HOME/dotfiles/.zshrc $HOME/.zshrc
-ln -nfs $ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme $ZSH_CUSTOM/themes/spaceship.zsh-theme
+ln -nfs "$HOME/dotfiles/spaceship.zsh" "$HOME/.config/spaceship.zsh"
+# ln -nfs "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
+ln -nfs "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
+ln -nfs "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
