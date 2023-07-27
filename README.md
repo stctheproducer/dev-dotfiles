@@ -5,7 +5,6 @@ This repository contains dotfiles specifically used in [devcontainers](https://c
 Things you'll find in this dotfiles (for now):
 
 - [Aliases](https://github.com/JorgenKrieger/dotfiles-for-devcontainers/blob/main/.aliases)
-- [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [Spaceship Prompt](https://github.com/spaceship-prompt/spaceship-prompt)
 - [Bat](https://github.com/sharkdp/bat)
 
