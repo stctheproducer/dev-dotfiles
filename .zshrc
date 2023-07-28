@@ -32,7 +32,7 @@ export FLYCTL_INSTALL="/$HOME/.fly"
 # If you come from bash you might have to change your $PATH.
 export PATH=$PNPM_HOME:$FLYCTL_INSTALL/bin:$HOME/bin:/usr/local/bin:$PATH
 
-pgrep -x gpg-agent > /dev/null || gpg-agent --daemon
+pgrep -x gpg-agent > /dev/null || gpg-agent --daemon 2> /dev/null
 
 export GPG_TTY=$(tty)
 
@@ -87,6 +87,8 @@ zinit light "spaceship-prompt/spaceship-vue"
 spaceship add vue
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# [ -f /home/linuxbrew/.linuxbrew/share/zsh/site-functions ] && source /home/linuxbrew/.linuxbrew/share/zsh/site-functions
 
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
