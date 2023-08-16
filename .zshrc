@@ -23,14 +23,12 @@ source $ZSH/oh-my-zsh.sh
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-[[ $(uname) = "Linux" ]] && export PNPM_HOME="$HOME/.local/share/pnpm"
-
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
 export FLYCTL_INSTALL="/$HOME/.fly"
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$PNPM_HOME:$FLYCTL_INSTALL/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$FLYCTL_INSTALL/bin:$HOME/bin:/usr/local/bin:$PATH
 
 pgrep -x gpg-agent > /dev/null || gpg-agent --daemon 2> /dev/null
 
