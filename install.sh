@@ -8,6 +8,7 @@ if command -v apt-get &> /dev/null; then
 fi
 
 brew install git-delta
+brew install git-flow-avh
 
 # Create symlinks
 ln -nfs "$HOME/dotfiles/spaceship.zsh" "$HOME/.config/spaceship.zsh"
