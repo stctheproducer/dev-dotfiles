@@ -2,13 +2,15 @@
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt" --depth=1
 
 # Update debian dependancies
-if command -v apt-get &> /dev/null; then
+if command -v apt-get >/dev/null 2>&1; then
   sudo apt-get update
   sudo apt-get install -y bat
 fi
 
-brew install git-delta
-brew install git-flow-avh
+if command -v brew >/dev/null 2>&1; then
+  brew install git-delta
+  brew install git-flow-avh
+fi
 
 # Create symlinks
 ln -nfs "$HOME/dotfiles/spaceship.zsh" "$HOME/.config/spaceship.zsh"

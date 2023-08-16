@@ -66,8 +66,11 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
 # zsh-fzf-history-search
-zinit ice lucid wait'0'
-zinit light joshskidmore/zsh-fzf-history-search
+if [ -f ~/.fzf.zsh ]
+then
+    zinit ice lucid wait'0'
+    zinit light joshskidmore/zsh-fzf-history-search
+fi
 
 # Git flow
 zinit light petervanderdoes/git-flow-completion
@@ -86,7 +89,7 @@ spaceship add vue
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# [ -f /home/linuxbrew/.linuxbrew/share/zsh/site-functions ] && source /home/linuxbrew/.linuxbrew/share/zsh/site-functions
+[ -f /home/linuxbrew/.linuxbrew/share/zsh/site-functions ] && source /home/linuxbrew/.linuxbrew/share/zsh/site-functions
 
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
