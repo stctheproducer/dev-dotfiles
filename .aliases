@@ -7,7 +7,7 @@ alias pnx=pnpm dlx
 alias pnpx=pnpm dlx
 alias pnpmOnly="npm pkg set scripts.preinstall=\"npx only-allow pnpm\""
 alias installHusky="npm install -D is-ci husky @commitlint/{config-conventional,cli}; echo \"module.exports = { extends: ['@commitlint/config-conventional'] };\" > commitlint.config.js"
-alias configureHusky="npx husky install; npx husky add .husky/commit-msg 'npx commitlint --verbose --edit \"\$1\"'; npm pkg set scripts.prepare=\"is-ci || husky install\""
+alias configureHusky="npx husky install; npx husky add .husky/commit-msg 'npx --no-install commitlint --verbose --edit \"\$1\"'; npm pkg set scripts.prepare=\"is-ci || husky install\""
 alias fzf="fzf --preview 'batcat --color=always --style=numbers --line-range=:500 {}'"
 alias config="dotbare"
 alias cat="bat"
